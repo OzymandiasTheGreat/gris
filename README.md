@@ -23,6 +23,7 @@ new GRIS().ready.then((gris) => {
 ## API
 
 class **GRIS**
+
 - property **ready**: Promise<GRIS>
   - resolves with object itself once all the initialization is done. Do not call other methods before this resolves.
 - method **searchByFile(imagePath: string, page: 0)**: Promise<SearchResult[]>
@@ -31,8 +32,9 @@ class **GRIS**
   - perform reverse image search using remote image located at *url*. *page* is same as for **searchByFile**.
 - method **kill()**: Promise<void>
   - free resources, kill chromium, and clean up. Call this when you are done searching.
-  
+
 interface **SearchResult**
+
 - property **image**: string
   - remote image uri.
 - property **page**: string
@@ -41,11 +43,11 @@ interface **SearchResult**
   - remote image width in pixels.
 - property **height**: number
   - remote image height in pixels.
-  
+
  ## Abuse
- 
+
  Google does not provide an API for reverse image search and programatic usage of this service is against the TOS.
  Use at your own risk.
- 
+
   Note:
   Heavy usage of this module may result in captchas being thrown which WILL BREAK this module.
