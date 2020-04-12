@@ -1,6 +1,6 @@
 {
   "name": "google-reverse-image-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reverse image search module with rich results using Google",
   "author": {
     "name": "Ozymandias (Tomas Ravinskas)",
@@ -10,6 +10,12 @@
   "repository": "https://github.com/OzymandiasTheGreat/gris",
   "homepage": "https://github.com/OzymandiasTheGreat/gris",
   "main": "dist/index.js",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "LICENSE",
+    "README.md"
+  ],
   "devDependencies": {
     "@types/cheerio": "^0.22.17",
     "@types/node-fetch": "^2.5.6",
